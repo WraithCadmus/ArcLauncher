@@ -27,7 +27,6 @@
   			<graphicClass>Graphic_Single</graphicClass>
   		</graphicData>
   		<soundInteract>InteractChargeRifle</soundInteract>
-  		<generateCommonality>0.4</generateCommonality>
   		<statBases>
   			<WorkToMake>50000</WorkToMake>
   			<Mass>3.4</Mass>
@@ -41,6 +40,11 @@
       <recipeMaker>
         <researchPrerequisite>ChargedShot</researchPrerequisite>
       </recipeMaker>
+      <generateCommonality>0.10</generateCommonality>
+      <techLevel>Spacer</techLevel>
+      <weaponTags>
+        <li>AdvancedGun</li>
+      </weaponTags>
       <costList>
   			<Steel>20</Steel>
   			<Plasteel>40</Plasteel>
