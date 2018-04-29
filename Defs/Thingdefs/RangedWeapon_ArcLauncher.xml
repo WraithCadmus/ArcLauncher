@@ -5,7 +5,7 @@
   		<defName>Bullet_ArcLauncher</defName>
   		<label>arc bolt</label>
   		<graphicData>
-  			<texPath>Things/Projectile/InfernoCannonShot</texPath>
+  			<texPath>Things/Projectile/ArcLauncherShot</texPath>
   			<graphicClass>Graphic_Single</graphicClass>
   			<shaderType>TransparentPostLight</shaderType>
   		</graphicData>
@@ -23,13 +23,13 @@
   		<label>arc launcher</label>
   		<description>Arc bolt launcher. Stuns mechanoids and disable electronics.</description>
   		<graphicData>
-  			<texPath>Things/Item/Equipment/WeaponRanged/IncendiaryLauncher</texPath>
+  			<texPath>Things/Item/Equipment/WeaponRanged/ArcLauncher</texPath>
   			<graphicClass>Graphic_Single</graphicClass>
   		</graphicData>
   		<soundInteract>InteractChargeRifle</soundInteract>
   		<generateCommonality>0.4</generateCommonality>
   		<statBases>
-  			<WorkToMake>22000</WorkToMake>
+  			<WorkToMake>50000</WorkToMake>
   			<Mass>3.4</Mass>
   			<AccuracyTouch>0.79</AccuracyTouch>
   			<AccuracyShort>0.42</AccuracyShort>
@@ -54,7 +54,7 @@
   				<warmupTime>3.0</warmupTime>
   				<range>24</range>
   				<burstShotCount>1</burstShotCount>
-  				<soundCast>ShotIncendiaryLauncher</soundCast>
+  				<soundCast>ShotArcLauncher</soundCast>
   				<soundCastTail>GunTail_Medium</soundCastTail>
   				<muzzleFlashScale>14</muzzleFlashScale>
   			</li>
