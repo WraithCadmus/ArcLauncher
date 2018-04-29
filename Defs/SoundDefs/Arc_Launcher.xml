@@ -6,7 +6,6 @@
     <eventNames />
     <subSounds>
       <li>
-        <onCamera>True</onCamera>
         <grains>
           <li Class="AudioGrain_Clip">
             <clipPath>WeaponZap</clipPath>
