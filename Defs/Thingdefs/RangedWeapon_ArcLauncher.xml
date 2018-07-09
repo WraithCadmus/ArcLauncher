@@ -26,43 +26,49 @@
   			<texPath>Things/Item/Equipment/WeaponRanged/ArcLauncher</texPath>
   			<graphicClass>Graphic_Single</graphicClass>
   		</graphicData>
-  		<soundInteract>InteractChargeRifle</soundInteract>
+  		<soundInteract>Interact_ChargeRifle</soundInteract>
   		<statBases>
-  			<WorkToMake>50000</WorkToMake>
+  			<WorkToMake>10000</WorkToMake>
   			<Mass>3.4</Mass>
-  			<AccuracyTouch>0.79</AccuracyTouch>
-  			<AccuracyShort>0.42</AccuracyShort>
-  			<AccuracyMedium>0.18</AccuracyMedium>
-  			<AccuracyLong>0.06</AccuracyLong>
-  			<RangedWeapon_Cooldown>4.0</RangedWeapon_Cooldown>
+  			<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
         <Weapon_Bulk>1.0</Weapon_Bulk>
   		</statBases>
       <recipeMaker>
         <researchPrerequisite>ChargedShot</researchPrerequisite>
+        <skillRequirements>
+          <Crafting>6</Crafting>
+        </skillRequirements>
+        <recipeUsers Inherit="False">
+          <li>FabricationBench</li>
+        </recipeUsers>
       </recipeMaker>
       <generateCommonality>0.10</generateCommonality>
       <techLevel>Spacer</techLevel>
       <weaponTags>
-        <li>AdvancedGun</li>
+        <li>SpacerGun</li>
       </weaponTags>
       <costList>
-  			<Steel>20</Steel>
-  			<Plasteel>40</Plasteel>
-  			<Component>7</Component>
-  		</costList>
-  		<verbs>
-  			<li>
-  				<verbClass>Verb_Shoot</verbClass>
-  				<hasStandardCommand>true</hasStandardCommand>
-  				<defaultProjectile>Bullet_ArcLauncher</defaultProjectile>
-  				<warmupTime>3.0</warmupTime>
-  				<range>24</range>
-  				<burstShotCount>1</burstShotCount>
-  				<soundCast>ShotArcLauncher</soundCast>
-  				<soundCastTail>GunTail_Medium</soundCastTail>
-  				<muzzleFlashScale>14</muzzleFlashScale>
-  			</li>
-  		</verbs>
+        <Plasteel>50</Plasteel>
+        <ComponentSpacer>2</ComponentSpacer>
+      </costList>
+      <verbs>
+        <li>
+          <verbClass>Verb_Shoot</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_ArcLauncher</defaultProjectile>
+          <warmupTime>3.5</warmupTime>
+          <minRange>1.5</minRange>
+          <range>23.9</range>
+          <forcedMissRadius>1.9</forcedMissRadius>
+          <burstShotCount>1</burstShotCount>
+          <soundCast>ShotArcLauncher</soundCast>
+          <soundCastTail>GunTail_Medium</soundCastTail>
+          <muzzleFlashScale>14</muzzleFlashScale>
+          <targetParams>
+            <canTargetLocations>true</canTargetLocations>
+          </targetParams>
+        </li>
+      </verbs>
       <tools>
         <li>
           <label>stock</label>
